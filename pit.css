@@ -1,0 +1,221 @@
+/*  tu zdefiniowany jest glównie wyglad menu poziomego */
+	ul, ul li {	display: block;	list-style: none; margin: 0; padding: 0; }
+	ul { border-bottom: 1px solid #888;	float: left; width: 100%; padding-left: 10px; }
+	ul li { float: left; margin-right: 10px; }
+	ul a:link, ul a:visited { text-decoration: none; display: block; background-color: #000000; color: white;padding: 3px 3px; border: 1px solid #888; position: relative; top: 2px; }
+	ul a:hover { background-color: #336600; border-bottom-color: #336600; }
+
+/* kolor fontu i tla portalu */	
+body {  
+	background: url(zdjecia/tlo.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+	color: white; margin: 3px; min-height: 100%; position:relative; opacity:0.75;}
+
+/* kolor fontów naglówkowych */	
+	h2 {color: white; }
+	h4 {color: white}
+	h5 {color: white}
+
+/* kolor przyklad definiowania wlasnego formatowania */	
+	wlasnytyp1 { color: red; background-color: yellow;  font-weight: bold; }
+
+/* przyklad definiowania formatowania tabeli */	
+	table, td, th { border: 2px solid black; text-align: center; padding: 3px; } 
+	th { background-color: blue; color: white;}
+	caption { text-align:left; color:blue; font-style:italic; padding-left: 5px; font-weight: bold; }
+
+/* definicja formatowania headera */	
+	#header {background-color:#000000; padding-left: 10px; text-align:left; }
+
+/* definicja formatowania contenta - zawartosci strony */	
+	#content { background-color:#000000; margin: 0px; border: 2px solid #000000; min-height:400px;}
+	#content p { padding:10px; }
+
+/* definicja formatowania footer - stopki */	
+	#footer { height:22px; margin: 0px;bottom:0;width:100%;position:fixed}
+	#footer p { color:#ffcc00; text-align:center; margin: 0px;}
+	#footer a { color:red; font-style:italic;}
+	
+#menu
+{
+	float:left;
+	width:148px;
+	text-align:center;
+	font-size: 18px;
+
+}
+#tekst
+{
+	float:left;
+	padding:40px;
+	width:auto;
+	background-color:#000000;
+	min-height: auto;
+	text-align: justify;
+}
+.option
+{
+	font-size:18px;
+	height:25px;
+	padding:10px;
+	background-color:#2a2a2a;
+}
+.option:hover
+{
+	background-color:#336600;
+	cursor:pointer;
+}
+a.linkmenu
+{
+	color:#ffcc00;
+	text-decoration:none;
+}
+div.scroll {
+    overflow: scroll;
+	height:500px;
+}
+
+
+
+
+/*  listings section  */
+.listings{
+    padding: 100px 0;
+}
+
+.listings ul.properties_list{
+    list-style: none;
+    overflow: hidden;
+}
+
+.listings ul.properties_list li{
+    display: block;
+    width: 340px;
+    height: auto;
+    position: relative;
+    float: left;
+    margin: 0 40px 40px 0;
+}
+
+.listings ul.properties_list li img.property_img{
+    width: 100%;
+    height: auto!important;
+    vertical-align: top;
+}
+
+
+.listings ul.properties_list li .price{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 15px 20px;
+    background: #ffffff;
+    color: #514d4d;
+    font-family: "lato-bold", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+
+
+.listings ul.properties_list li:nth-child(3n+0){
+    margin-right: 0;
+}
+
+.listings ul li .property_details{
+    width: 298px;
+    padding: 10px 20px 14px 20px;
+    border-bottom: 1px solid #f2f1f1;
+    border-left: 1px solid #f2f1f1;
+    border-right: 1px solid #f2f1f1;
+
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+.listings ul li:hover .property_details{
+    border-bottom: 1px solid #95badf;
+    border-left: 1px solid #95badf;
+    border-right: 1px solid #95badf;
+}
+
+.listings ul li .property_details h1{
+    color: #666464;
+    font-family: "lato-bold", Helvetica, Arial, sans-serif;
+    font-size: 16px!important;
+    font-weight: bold;
+    margin-bottom: 5px;
+    line-height: 28px;
+}
+
+.listings ul li .property_details h1 a{
+    text-decoration: none;
+    color: #666464;
+}
+
+.listings ul li .property_details h2{
+    color: #9d9d9d;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 26px;
+}
+
+.listings ul li .property_details .property_size{
+    color: #676767;
+}
+
+.listings .more_listing{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 84px 0 22px 0;
+}
+
+.listings .more_listing_btn{
+    text-decoration: none;
+    padding: 20px 40px;
+    border: 2px solid #bfd9f1;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -o-border-radius: 30px;
+    color: #afcbe6;
+    font-family: "lato-regular", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -o-transition: all .2s linear;
+}
+
+.listings .more_listing_btn:hover{
+    color: #a0c3e5;
+    border: 2px solid #a0c3e5;    
+}
+
+
+.wrapper{
+    width: 1100px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+
+
