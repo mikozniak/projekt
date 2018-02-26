@@ -63,7 +63,7 @@ td.calendar-day, td.calendar-day-np {
 <link href="jquery-ui.css" rel="stylesheet">
 <script src="jquery-1.10.2.js"></script>
 <script src="jquery-ui.js"></script>
-<script src="lang/datepicker-pl.js"></script>
+<script src="datepicker-pl.js"></script>
 <script>
     $(function() {
 	$.datepicker.setDefaults($.datepicker.regional['pl']);
