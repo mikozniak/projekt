@@ -1,4 +1,4 @@
-/*  tu zdefiniowany jest glównie wyglad menu poziomego */
+/*  tu zdefiniowany jest glÃ³wnie wyglad menu poziomego */
 	ul, ul li {	display: block;	list-style: none; margin: 0; padding: 0; }
 	ul { border-bottom: 1px solid #888;	float: left; width: 100%; padding-left: 10px; }
 	ul li { float: left; margin-right: 10px; }
@@ -7,7 +7,7 @@
 
 /* kolor fontu i tla portalu */	
 body {  
-	background: url(zdjecia/tlo.jpg) no-repeat center center fixed; 
+	background: url(tlo.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -15,7 +15,7 @@ body {
 
 	color: white; margin: 3px; min-height: 100%; position:relative; opacity:0.75;}
 
-/* kolor fontów naglówkowych */	
+/* kolor fontÃ³w naglÃ³wkowych */	
 	h2 {color: white; }
 	h4 {color: white}
 	h5 {color: white}
